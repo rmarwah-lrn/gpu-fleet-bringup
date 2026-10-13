@@ -1,0 +1,7 @@
+services:
+  redfish-mockup:
+    build:
+      context: https://github.com/DMTF/Redfish-Mockup-Server.git
+    command: ["-H", "0.0.0.0"]
+    ports:
+      - "8000:8000"
